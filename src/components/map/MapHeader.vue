@@ -80,6 +80,7 @@
             :inputPlaceholder="'Token'"
             :isInvalid="tokenInvalid"
             :invalidMessage="tokenInvalidMessage"
+            :inputType="'password'"
           />
           <button
             class="button is-outlined"
