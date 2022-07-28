@@ -1,0 +1,43 @@
+= Vue 3 + TypeScript + Vite Wrapped in Tauri
+
+== Purpose:
+----
+To demonstrate an issue seen in using auto resize for the map.
+----
+
+=====
+You must provide a token, a field is availible in the map header. You can track it through the emit: header -> map view -> mainStore.mapToken -> mapModal -> vueMapbox
+To test: Set window size by dragging a corner. Select a locaiton from the dropdown
+
+To change to 'normal behavior': remove the `auto-resize` v-bind from `VueMapBoxTs.vue ln 57`
+and drag the corner again to force the map to resize before opening the map
+=====
+== Project setup
+
+----
+make depends
+----
+
+=== Compiles and hot-reloads for development
+
+----
+make run
+----
+
+=== Clean Project
+
+----
+make clean-all
+----
+
+=== Vue Devtools
+
+----
+make devtools
+----
+
+OR run both devtools and development server:
+
+----
+make dev
+----
