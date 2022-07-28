@@ -54,7 +54,7 @@
     :zoom="focusZoom"
     :maxPitch="85"
     :height="'100%'"
-    :autoResize="false"
+    :autoResize="true"
     :autoResizeDelay="10"
   >
     <div v-if="markers">
